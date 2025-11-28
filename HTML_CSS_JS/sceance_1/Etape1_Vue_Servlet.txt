@@ -1,0 +1,13 @@
+protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html");
+		response.setCharacterEncoding("utf-8");
+		
+		PrintWriter out = response.getWriter();
+		out.println ("bonjour !");
+		
+	}
+
+
+A l'exécution on voit que notre servlet exécute bien le code et on 
+obtient bonjour! sauf que ce n'est pas une page html.Une page html
+doit contenir un doctype, des balises.
